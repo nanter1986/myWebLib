@@ -78,7 +78,7 @@ p {
   background-position: center;
   color: rgb(172, 175, 182);
   padding: 0px;
-  border-top:black solid 2px !important;
+  /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
 }
 
@@ -95,7 +95,7 @@ p {
   background-color:rgb(217, 213, 209) !important;
   color: rgb(45, 43, 44) !important;
   padding: 0px;
-  border-top:black solid 2px !important;
+  /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
 }
 
@@ -103,7 +103,7 @@ p {
   background-color:rgb(45, 43, 44) !important;
   color: rgb(217, 213, 209) !important;
   padding: 0px;
-  border-top:black solid 2px !important;
+  /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
 }
 
@@ -130,7 +130,7 @@ p {
   background-position: center;
   color: rgb(172, 175, 182) !important;
   padding: 0px;
-  border-top:black solid 2px !important;
+  /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
 }
 
@@ -154,7 +154,7 @@ p {
   background-color:rgba(0, 0, 0, 1) !important;
   padding: 0px;
   margin:0px;
-  border-top:black solid 2px !important;
+  /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
 }
 
@@ -187,17 +187,18 @@ h1, h2, h3 {
 }
 
 .hoverable {
-  padding: 0px;
+  padding:0px !important;
+  margin:0px;
   -moz-transition: all 0.6s;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
 
-.hoverable:hover {
+/*.hoverable:hover {
   moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-}
+}*/
 
 ul {
   list-style-type: circle;
@@ -218,7 +219,7 @@ ul {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #291d28;
+  background-color: black;
   /* Set a background color */
   color: white;
   /* Text color */
@@ -230,10 +231,7 @@ ul {
   /* Rounded corners */
 }
 
-#back2Top:hover {
-  background-color: #422742cc;
-  /* Add a dark-grey background on hover */
-}
+
 
 #symbols {
   text-align: center;
@@ -335,8 +333,8 @@ ol{
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top:black solid 2px !important;
-  border-bottom:black solid 2px !important;
+  /*border-top:black solid 2px !important;
+  border-bottom:black solid 2px !important;*/
 
 }
 
@@ -357,4 +355,25 @@ ol{
 
 div{
   overflow: hidden;
+
+  /*margin:0px !important;*/
+}
+
+#buttonCall{
+  display:none;
+  text-align:center;
+}
+
+#messageCall{
+  display:none;
+  text-align:center;
+}
+
+#messageCall2{
+  display:none;
+  text-align:center;
+}
+
+#carouselShell{
+  padding:0px !important;
 }

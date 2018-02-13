@@ -6,6 +6,8 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
+
+
     $(window).scroll(function() {
         var height = $(window).scrollTop();
         if (height > 100) {
@@ -21,5 +23,17 @@ $(document).ready(function () {
         $(".nav li").removeClass("active");
         return false;
     });
+
+    $("#messageCall").fadeIn(2000,function(){
+      $("#messageCall2").fadeIn(2000,function(){
+        $("#buttonCall").fadeIn(2000);
+      });
+
+    });
+
+    $("#buttonCall").click(function(){
+      document.getElementById('topothesia').scrollIntoView();
+    });
+
 
 });
