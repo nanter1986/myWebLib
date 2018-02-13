@@ -1,17 +1,19 @@
 body {
-  background-image: url("../img/city.jpg");
+  background-color: rgb(0, 0, 0);
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 65px;
-  font-size: 22px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin:0px;
+  font-size: 14px;
   font-family: Impact;
 }
 
 .navbar-inverse {
-  background-color: #422742cc;
+  background-color: rgba(0, 0, 0, 1);
   font-size: 16px;
 }
 
@@ -38,8 +40,8 @@ body {
 }
 
 .panel {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   border-radius: 0px !important;
   border: none !important;
 }
@@ -70,12 +72,18 @@ p {
 
 #poioi {
   background-color: #141212b3;
-  background-image: url("../img/shop.jpeg");
+  background-image: url("../img/coffee.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  color: white;
+  color: rgb(172, 175, 182);
   padding: 0px;
+  border-top:black solid 2px !important;
+  border-bottom:black solid 2px !important;
+}
+
+#poioiOverlay{
+  background-color:rgba(29, 17, 2, 0.72);
 }
 
 #poioi ul {
@@ -83,31 +91,47 @@ p {
   margin: 0px;
 }
 
-#treisLogoi {
-  background-image: url("../img/shop.jpeg");
+.whiteStrip{
+  background-color:rgb(217, 213, 209) !important;
+  color: rgb(45, 43, 44) !important;
+  padding: 0px;
+  border-top:black solid 2px !important;
+  border-bottom:black solid 2px !important;
+}
+
+.blackStrip{
+  background-color:rgb(45, 43, 44) !important;
+  color: rgb(217, 213, 209) !important;
+  padding: 0px;
+  border-top:black solid 2px !important;
+  border-bottom:black solid 2px !important;
+}
+
+#coffeeSection {
+
+}
+
+#drinkSection{
+
+}
+
+#foodSection{
+
+}
+
+#wineSection{
+
+}
+
+#spacesSection{
+  background-image: url("../img/spaces.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  color: white;
+  color: rgb(172, 175, 182) !important;
   padding: 0px;
-}
-
-#treisLogoi>#accordion>div {
-  background-color: #14121299;
-  margin: 100px;
-}
-
-#accordion>.panel-default {
-  background-color: #14121200;
-}
-
-#accordion2>.panel-default {
-  background-color: #14121200;
-}
-
-.panel-body, .panel-title, .panel-default, .panel-title {
-  background-color: #141212b3;
-  color: #dde4e7;
+  border-top:black solid 2px !important;
+  border-bottom:black solid 2px !important;
 }
 
 .panel-title {
@@ -115,67 +139,23 @@ p {
 }
 
 .panel-body {
-  background-color: #422742cc;
-}
-
-#prosfores {
-  /*background-color: #141212b3;*/
-  background-image: url("../img/shop.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: white;
-  padding: 0px;
-}
-
-#ofeli {
-  background-image: url("../img/shop.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: white;
-  padding: 0px;
-}
-
-#thirtyeuro {
-  background-image: url("../img/shop.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: white;
-  padding: 0px;
-}
-
-#dynamikes {
-  background-image: url("../img/shop.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: white;
-  padding: 0px;
-}
-
-#eshop {
-  background-image: url("../img/shop.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: white;
-  padding: 0px;
+  /*background-color: rgba(22, 13, 1, 0.87);*/
 }
 
 #epikinwnia {
-  background-image: url("../img/phone.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: white;
+  background-color:rgba(0, 0, 0, 1) !important;
+  color: rgb(172, 175, 182) !important;
   padding: 0px;
   font-size: 20px;
+  margin:0px;
 }
 
 #topothesia {
+  background-color:rgba(0, 0, 0, 1) !important;
   padding: 0px;
+  margin:0px;
+  border-top:black solid 2px !important;
+  border-bottom:black solid 2px !important;
 }
 
 .panel-heading {
@@ -191,9 +171,7 @@ p {
   transition: background-color 4s;
 }
 
-.logoi>img {
-  width: 100%;
-}
+
 
 #facebookIcon {
   width: 10%;
@@ -210,12 +188,15 @@ h1, h2, h3 {
 
 .hoverable {
   padding: 0px;
-  transition: padding 1s;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .hoverable:hover {
-  padding: 20px;
-  transition: padding 1s;
+  moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 ul {
@@ -260,7 +241,7 @@ ul {
 
 #footerMy {
   /*background-image: url("../img/phone.jpg");*/
-  background-color: #291d28;
+  background-color: rgba(0, 0, 0, 1);
   /*background-size: cover;
   background-attachment: fixed;
   background-position:center;*/
@@ -329,7 +310,7 @@ ul {
 }
 
 #extraEkptwsi{
-  background-image: url("../img/shop.jpeg");
+  background-image: url("../img/food.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -339,4 +320,41 @@ ul {
 
 ol{
   list-style: decimal;
+}
+
+
+
+#topSenction{
+  background-color: #141212b3;
+  background-image: url("../img/spaces.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  color: white;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top:black solid 2px !important;
+  border-bottom:black solid 2px !important;
+
+}
+
+#topSenctionContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  background-color:rgba(29, 17, 2, 0.42);
+  padding:50px;
+  margin:auto;
+  min-height:700px;
+}
+
+#spacesOverlay{
+  background-color:rgba(29, 17, 2, 0.72);
+}
+
+div{
+  overflow: hidden;
 }
