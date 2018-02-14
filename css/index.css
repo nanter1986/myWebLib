@@ -343,6 +343,15 @@ ol{
 
 }
 
+@keyframes fadeInTop {
+  0% {
+    background-color:rgba(29, 17, 2, 1);
+  }
+  100% {
+    background-color:rgba(29, 17, 2, 0.42);
+  }
+}
+
 #topSenctionContainer{
   display: flex;
   align-items: center;
@@ -353,6 +362,9 @@ ol{
   margin:auto;
   min-height:700px;
   font-family: 'Indie Flower';
+  animation-name: fadeInTop !important;
+  animation-duration: 10s !important;
+  animation-iteration-count: 1;
 }
 
 #spacesOverlay{
