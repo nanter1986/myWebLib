@@ -96,6 +96,7 @@ p {
 }
 
 #poioiOverlay{
+  opacity:0.2;
   background-color:rgba(29, 17, 2, 0.72);
   min-height:600px;
 }
@@ -382,6 +383,7 @@ ol{
 }
 
 #spacesOverlay{
+  opacity:0.2;
   background-color:rgba(29, 17, 2, 0.72);
   min-height:600px;
 }

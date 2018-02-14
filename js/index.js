@@ -40,4 +40,28 @@ $(document).ready(function() {
   });
 
 
+
+  var waypoint = new Waypoint({
+    element: document.getElementById('spacesOverlay'),
+    handler: function() {
+      console.log("into view");
+      $("#spacesOverlay").animate({opacity:1},500);
+    },
+    offset:'50%'
+  });
+
+  var waypoint = new Waypoint({
+    element: document.getElementById('poioiOverlay'),
+    handler: function() {
+      console.log("into view");
+      $("#poioiOverlay").animate({opacity:1},500);
+    },
+    offset:'50%'
+  });
+
+
+
+
+
+
 });
