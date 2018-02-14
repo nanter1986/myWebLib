@@ -14,11 +14,12 @@ body {
 
 .navbar-inverse {
   background-color: rgba(0, 0, 0, 1);
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .navbar-nav>li {
   border-left: solid black 2px;
+  font-family:'Indie Flower';
 }
 
 .container {
@@ -80,6 +81,7 @@ p {
   padding: 0px;
   /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
+  font-family: 'EB Garamond',serif !important;
 }
 
 #poioiOverlay{
@@ -97,6 +99,7 @@ p {
   padding: 0px;
   /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
+  font-family: 'EB Garamond',serif !important;
 }
 
 .blackStrip{
@@ -105,6 +108,7 @@ p {
   padding: 0px;
   /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
+  font-family: 'EB Garamond',serif !important;
 }
 
 #coffeeSection {
@@ -132,6 +136,7 @@ p {
   padding: 0px;
   /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
+  font-family: 'EB Garamond',serif !important;
 }
 
 .panel-title {
@@ -347,6 +352,7 @@ ol{
   padding:50px;
   margin:auto;
   min-height:700px;
+  font-family: 'Indie Flower';
 }
 
 #spacesOverlay{
