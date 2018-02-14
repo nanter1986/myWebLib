@@ -86,6 +86,7 @@ p {
 
 #poioiOverlay{
   background-color:rgba(29, 17, 2, 0.72);
+  min-height:600px;
 }
 
 #poioi ul {
@@ -369,6 +370,7 @@ ol{
 
 #spacesOverlay{
   background-color:rgba(29, 17, 2, 0.72);
+  min-height:600px;
 }
 
 div{
