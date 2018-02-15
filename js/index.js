@@ -37,6 +37,16 @@ $(document).ready(function() {
 
   });
 
+  $(".trans").on("mouseenter",function(){
+    console.log("over trans");
+    $(this).css('transform','scale(1.3)');
+  });
+
+  $(".trans").on("mouseleave",function(){
+    console.log("over trans");
+    $(this).css('transform','scale(1)');
+  });
+
   $("#buttonCall").click(function() {
     document.getElementById('topothesia').scrollIntoView();
   });
