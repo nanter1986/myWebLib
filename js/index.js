@@ -37,6 +37,7 @@ $(document).ready(function() {
 
   });
 
+
   $(".trans").on("mouseenter",function(){
     console.log("over trans");
     $(this).css('transform','scale(1.3)');
