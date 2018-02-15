@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  const delay=1000;
+
   $(".nav li").on("click", function() {
     console.log("clicked on item");
     $(".nav li").removeClass("active");
@@ -39,25 +41,24 @@ $(document).ready(function() {
     document.getElementById('topothesia').scrollIntoView();
   });
 
+  var waypoint = createWaypoint('spacesOverlay',delay);
+  var waypoint = createWaypoint('poioiOverlay',delay);
+  var waypoint = createWaypoint('coffeeSectionOverlay',delay);
+  var waypoint = createWaypoint('drinkSectionOverlay',delay);
+  var waypoint = createWaypoint('foodSectionOverlay',delay);
+  var waypoint = createWaypoint("wineSectionOverlay",delay);
 
-
-  var waypoint = new Waypoint({
-    element: document.getElementById('spacesOverlay'),
-    handler: function() {
-      console.log("into view");
-      $("#spacesOverlay").animate({opacity:1},500);
-    },
-    offset:'50%'
-  });
-
-  var waypoint = new Waypoint({
-    element: document.getElementById('poioiOverlay'),
-    handler: function() {
-      console.log("into view");
-      $("#poioiOverlay").animate({opacity:1},500);
-    },
-    offset:'50%'
-  });
+  function createWaypoint(id,timeInMillis){
+    var waypoint = new Waypoint({
+      element: document.getElementById(id),
+      handler: function() {
+        console.log("into view");
+        $("#"+id).animate({opacity:1},timeInMillis);
+      },
+      offset:'50%'
+    });
+    return waypoint;
+  }
 
 
 

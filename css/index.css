@@ -128,12 +128,56 @@ p {
 
 }
 
+#coffeeOverlayBackground{
+  background-image: url("../img/coffeeSection.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#coffeeSectionOverlay{
+  opacity:0.2;
+}
+
+#drinkSectionBackground{
+  background-image: url("../img/wine.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#drinkSectionOverlay{
+  opacity:0.2;
+}
+
 #drinkSection{
 
 }
 
+#foodSectionBackground{
+  background-image: url("../img/food.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#foodSectionOverlay{
+  opacity:0.2;
+}
+
 #foodSection{
 
+}
+
+#wineSectionBackground{
+  background-image: url("../img/wineBack1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#wineSectionOverlay{
+  opacity:0.2;
 }
 
 #wineSection{
