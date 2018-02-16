@@ -48,8 +48,8 @@ $(document).ready(function() {
     $(this).css('transform','scale(1)');
   });
 
-  $("#buttonCall").click(function() {
-    document.getElementById('topothesia').scrollIntoView();
+  $("#back2TopImage").on("mouseenter",function(){
+    $(this).css('transform','rotateY(180deg)');
   });
 
   var waypoint = createWaypoint('spacesOverlay',delay);

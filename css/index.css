@@ -289,8 +289,6 @@ ul {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: black;
-  /* Set a background color */
   color: white;
   /* Text color */
   cursor: pointer;
@@ -299,6 +297,15 @@ ul {
   /* Some padding */
   border-radius: 10px;
   /* Rounded corners */
+  opacity:0.5;
+
+  transition:all 1s;
+}
+
+#back2Top:hover {
+  opacity:1;
+  transform: rotateY(180deg);
+  transition:all 1s;
 }
 
 
