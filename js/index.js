@@ -2,33 +2,62 @@ $(document).ready(function() {
 
   const delay=1000;
 
-  $(".nav li").on("click", function() {
-    console.log("clicked on item");
-    $(".nav li").removeClass("active");
-    $(this).addClass("active");
-  });
+  changeActiveNavBarItem();
+  closeDropdownAfterClick();
+  backToTopAfterPoint(100);
+  scrollSlowlyToThePoint(0);
+  zoomTransClassImageToScale(1.1);
+  zoomOutTransClassImageToScale(1.0);
+  rotateButtonOnHover();
+  var waypoint1 = createWaypoint('spacesOverlay',delay);
+  var waypoint2 = createWaypoint('poioiOverlay',delay);
+  var waypoint3 = createWaypoint('coffeeSectionOverlay',delay);
+  var waypoint4 = createWaypoint('drinkSectionOverlay',delay);
+  var waypoint5 = createWaypoint('foodSectionOverlay',delay);
+  var waypoint6 = createWaypoint("wineSectionOverlay",delay);
 
-  $('.navbar-nav>li>a').on('click', function() {
-    $('.navbar-collapse').collapse('hide');
-  });
+  function changeActiveNavBarItem(){
+    $(".nav li").on("click", function() {
+      console.log("clicked on item");
+      $(".nav li").removeClass("active");
+      $(this).addClass("active");
+    });
+  }
 
-  $(window).scroll(function() {
-    var height = $(window).scrollTop();
-    if (height > 100) {
-      $('#back2Top').fadeIn();
-    } else {
-      $('#back2Top').fadeOut();
-    }
-  });
+  function closeDropdownAfterClick(){
+    $('.navbar-nav>li>a').on('click', function() {
+      $('.navbar-collapse').collapse('hide');
+    });
+  }
 
-  $("#back2Top").click(function(event) {
-    event.preventDefault();
-    $("html, body").animate({
-      scrollTop: 0
-    }, "slow");
-    $(".nav li").removeClass("active");
-    return false;
-  });
+
+
+  function backToTopAfterPoint(desiredHeight){
+    $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      if (height > desiredHeight) {
+        $('#back2Top').fadeIn();
+      } else {
+        $('#back2Top').fadeOut();
+      }
+    });
+  }
+
+
+
+
+
+
+  function scrollSlowlyToThePoint(point){
+    $("#back2Top").click(function(event) {
+      event.preventDefault();
+      $("html, body").animate({
+        scrollTop: point
+      }, "slow");
+      $(".nav li").removeClass("active");
+      return false;
+    });
+  }
 
   $("#messageCall").fadeIn(2000, function() {
     $("#messageCall2").fadeIn(2000, function() {
@@ -38,26 +67,30 @@ $(document).ready(function() {
   });
 
 
-  $(".trans").on("mouseenter",function(){
-    console.log("over trans");
-    $(this).css('transform','scale(1.1)');
-  });
 
-  $(".trans").on("mouseleave",function(){
-    console.log("over trans");
-    $(this).css('transform','scale(1)');
-  });
+  function zoomTransClassImageToScale(scale){
+    $(".trans").on("mouseenter",function(){
+      console.log("over trans");
+      var value='scale('+scale+')';
+      $(this).css('transform',value);
+    });
+  }
 
-  $("#back2TopImage").on("mouseenter",function(){
-    $(this).css('transform','rotateY(180deg)');
-  });
 
-  var waypoint = createWaypoint('spacesOverlay',delay);
-  var waypoint = createWaypoint('poioiOverlay',delay);
-  var waypoint = createWaypoint('coffeeSectionOverlay',delay);
-  var waypoint = createWaypoint('drinkSectionOverlay',delay);
-  var waypoint = createWaypoint('foodSectionOverlay',delay);
-  var waypoint = createWaypoint("wineSectionOverlay",delay);
+
+  function zoomOutTransClassImageToScale(scale){
+    $(".trans").on("mouseleave",function(){
+      console.log("over trans");
+      var value='scale('+scale+')';
+      $(this).css('transform',value);
+    });
+  }
+
+  function rotateButtonOnHover(){
+    $("#back2TopImage").on("mouseenter",function(){
+      $(this).css('transform','rotateY(180deg)');
+    });
+  }
 
   function createWaypoint(id,timeInMillis){
     var waypoint = new Waypoint({
@@ -70,10 +103,4 @@ $(document).ready(function() {
     });
     return waypoint;
   }
-
-
-
-
-
-
 });
