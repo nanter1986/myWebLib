@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   const delay=1000;
+  var waypoints=[];
 
   changeActiveNavBarItem();
   closeDropdownAfterClick();
@@ -9,12 +10,12 @@ $(document).ready(function() {
   zoomTransClassImageToScale(1.1);
   zoomOutTransClassImageToScale(1.0);
   rotateButtonOnHover();
-  var waypoint1 = createWaypoint('spacesOverlay',delay);
-  var waypoint2 = createWaypoint('poioiOverlay',delay);
-  var waypoint3 = createWaypoint('coffeeSectionOverlay',delay);
-  var waypoint4 = createWaypoint('drinkSectionOverlay',delay);
-  var waypoint5 = createWaypoint('foodSectionOverlay',delay);
-  var waypoint6 = createWaypoint("wineSectionOverlay",delay);
+  waypoints.push(createWaypoint('spacesOverlay',delay));
+  waypoints.push(createWaypoint('poioiOverlay',delay));
+  waypoints.push(createWaypoint('coffeeSectionOverlay',delay));
+  waypoints.push(createWaypoint('drinkSectionOverlay',delay));
+  waypoints.push(createWaypoint('foodSectionOverlay',delay));
+  waypoints.push(createWaypoint("wineSectionOverlay",delay));
 
   function changeActiveNavBarItem(){
     $(".nav li").on("click", function() {
