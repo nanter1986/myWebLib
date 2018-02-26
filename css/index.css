@@ -331,68 +331,7 @@ ul {
   text-align: center !important;
 }
 
-@keyframes example {
-  0% {
-    color: #f2e5ff;
-  }
-  25% {
-    color: #d7afff;
-  }
-  50% {
-    color: #bd7cff
-  }
-  75% {
-    color: #d7afff;
-  }
-  100% {
-    color: #f2e5ff;
-  }
-}
 
-#rainbowText {
-  animation-name: example !important;
-  animation-duration: 2s !important;
-  animation-iteration-count: infinite;
-}
-
-@keyframes example2 {
-  0% {
-    color: rgb(244, 10, 234);
-  }
-  25% {
-    color: rgb(179, 44, 186);
-  }
-  50% {
-    color: rgb(103, 50, 116);
-  }
-  75% {
-    color: rgb(179, 44, 186);
-  }
-  100% {
-    color: rgb(244, 10, 234);
-  }
-}
-
-#twentyfive{
-  font-weight:bold;
-  animation-name: example2 !important;
-  animation-duration: 2s !important;
-  animation-iteration-count: infinite;
-}
-
-.strikethrough{
-  color:rgba(129, 125, 122, 0.76);
-  text-decoration: line-through;
-}
-
-#extraEkptwsi{
-  background-image: url("../img/food.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: white;
-  padding: 0px;
-}
 
 ol{
   list-style: decimal;
