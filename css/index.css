@@ -1,5 +1,6 @@
 :root {
   --main-opacity-starting:0;
+  --nav-bar-font-family:'Indie Flower';
 }
 /*this will be my lib*/
 
@@ -35,7 +36,7 @@ body {
 
 .navbar-nav>li {
   border-left: solid black 2px;
-  font-family:'Indie Flower';
+  font-family:var(--nav-bar-font-family);
 }
 
 .container {
