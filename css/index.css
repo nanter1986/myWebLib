@@ -1,6 +1,7 @@
 :root {
   --main-opacity-starting:0;
   --nav-bar-font-family:'Indie Flower';
+  --sections-font-family:'EB Garamond',serif !important;
 }
 /*this will be my lib*/
 
@@ -99,7 +100,7 @@ p {
   padding: 0px;
   /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
-  font-family: 'EB Garamond',serif !important;
+  font-family: var(--sections-font-family);
 }
 
 #poioiOverlay{
@@ -119,7 +120,7 @@ p {
   padding: 0px;
   /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
-  font-family: 'EB Garamond',serif !important;
+  font-family: var(--sections-font-family);
 }
 
 .blackStrip{
@@ -128,7 +129,7 @@ p {
   padding: 0px;
   /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
-  font-family: 'EB Garamond',serif !important;
+  font-family: var(--sections-font-family);
 }
 
 #coffeeSection {
@@ -200,7 +201,7 @@ p {
   padding: 0px;
   /*border-top:black solid 2px !important;*/
   border-bottom:black solid 2px !important;
-  font-family: 'EB Garamond',serif !important;
+  font-family: var(--sections-font-family);
 }
 
 .panel-title {
