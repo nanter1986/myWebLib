@@ -17,7 +17,8 @@ $(document).ready(function() {
   waypoints.push(createWaypoint('foodSectionOverlay',delay));
   waypoints.push(createWaypoint("wineSectionOverlay",delay));
 
-  
+  //https://www.html5rocks.com/en/tutorials/webcomponents/imports/
+  //to use for carousel
 
 
 });
