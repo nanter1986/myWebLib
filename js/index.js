@@ -3,6 +3,7 @@ $(document).ready(function() {
   const delay=1000;
   var waypoints=[];
 
+  addCarousel();
   changeActiveNavBarItem();
   closeDropdownAfterClick();
   backToTopAfterPoint(100);

@@ -1,3 +1,14 @@
+function addCarousel(){
+  // var link = document.querySelector('link[rel="import"]');
+  // console.log(link);
+  // var content = link.import;
+  // var el = content.querySelector('#myCarousel');
+  // document.body.appendChild(el.cloneNode(true));
+  $("#carouselShell").load("html/carousel.html #myCarousel",function(){
+    console.log("loaded carousel from other file");
+  });
+}
+
 function createWaypoint(id,timeInMillis){
   var waypoint = new Waypoint({
     element: document.getElementById(id),
