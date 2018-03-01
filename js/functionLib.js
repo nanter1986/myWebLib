@@ -1,9 +1,10 @@
+function addNavbar(){
+  $(".navbar-inverse").load("html/navbar.html",function(){
+    console.log("loaded navbar from other file");
+  });
+}
+
 function addCarousel(){
-  // var link = document.querySelector('link[rel="import"]');
-  // console.log(link);
-  // var content = link.import;
-  // var el = content.querySelector('#myCarousel');
-  // document.body.appendChild(el.cloneNode(true));
   $("#carouselShell").load("html/carousel.html #myCarousel",function(){
     console.log("loaded carousel from other file");
   });
