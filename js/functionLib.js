@@ -4,6 +4,12 @@ function addNavbar(){
   });
 }
 
+function addTop(){
+  $("#topSenction").load("html/top.html",function(){
+    console.log("loaded top from other file");
+  });
+}
+
 function addCarousel(){
   $("#carouselShell").load("html/carousel.html #myCarousel",function(){
     console.log("loaded carousel from other file");
@@ -65,12 +71,7 @@ function scrollSlowlyToThePoint(point){
   });
 }
 
-$("#messageCall").fadeIn(2000, function() {
-  $("#messageCall2").fadeIn(2000, function() {
-    $("#buttonCall").css("display","inline-block");
-  });
 
-});
 
 
 

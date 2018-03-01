@@ -1,0 +1,29 @@
+#topSenctionContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  background-color:rgba(29, 17, 2, 0.42);
+  padding:50px;
+  margin:auto;
+  min-height:700px;
+  font-family: 'Indie Flower';
+  animation-name: fadeInTop !important;
+  animation-duration: 10s !important;
+  animation-iteration-count: 1;
+}
+
+#messageCall{
+  display:none;
+  text-align:center;
+}
+
+#messageCall2{
+  display:none;
+  text-align:center;
+}
+
+#buttonCall{
+  display:none;
+  text-align:center;
+}
