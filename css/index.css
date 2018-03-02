@@ -43,6 +43,7 @@ body {
   background-color: rgba(0, 0, 0, 1);
   font-size: 20px;
   opacity: 0.6;
+  z-index: 95 !important;
   -webkit-transition: opacity 2s;
   transition: opacity 2s;
 }
