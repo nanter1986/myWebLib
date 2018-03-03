@@ -9,6 +9,7 @@ $(document).ready(function() {
 
   addNavbar();
   addTop();
+  addFlex();
   addCarousel();
   changeActiveNavBarItem();
   closeDropdownAfterClick();

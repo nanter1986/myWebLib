@@ -10,6 +10,12 @@ function addTop(){
   });
 }
 
+function addFlex(){
+  $("#flexSection").load("html/flex.html",function(){
+    console.log("loaded flex from other file");
+  });
+}
+
 function addCarousel(){
   $("#carouselShell").load("html/carousel.html #myCarousel",function(){
     console.log("loaded carousel from other file");

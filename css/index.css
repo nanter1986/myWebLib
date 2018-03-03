@@ -385,6 +385,37 @@ div {
   padding: 0px !important;
 }
 
-/*#trans:hover{
-  transform: rotateY(180deg);
-}*/
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:stretch;
+  background-color: DodgerBlue  !important;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1 !important;
+  width: 25%  !important;
+  height: auto !important;
+  margin: 10px  !important;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px !important;
+  transition:all 1s;
+}
+
+.flex-container > div:hover {
+  background-color: #f1f1f1 !important;
+  width: 100px  !important;
+  margin: 10px  !important;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px !important;
+  flex-grow:8;
+  transition:all 1s;
+}
+
+#growth{
+
+}
